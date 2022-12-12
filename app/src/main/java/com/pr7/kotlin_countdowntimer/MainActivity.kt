@@ -41,7 +41,8 @@ class MainActivity : AppCompatActivity() {
 
         buttonshow.setOnClickListener {
             val time=SystemClock.elapsedRealtime()-chronemeter.base
-            Toast.makeText(this,"${time/1000}",Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this,"${time/1000}",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"${SystemClock.elapsedRealtime()}\n${chronemeter.base}",Toast.LENGTH_SHORT).show()
         }
 
         buttonstart.setOnClickListener {
